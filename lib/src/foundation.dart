@@ -61,7 +61,7 @@ class MasterDetailRouteObserver extends RouteObserver<PageRoute<dynamic>> {
   }
 
   void _triggerDetailsChangedCallback(Route route) {
-    if (route == null) {
+   if (route == null || route.settings.name == null) {
       return;
     }
 
